@@ -100,7 +100,7 @@ export default function BookPreview() {
       )}
 
       {/* Page Content */}
-      <div className="max-w-2xl mx-auto px-16 py-20">
+      <div className="max-w-2xl mx-auto px-16 max-sm:px-4 py-20 max-sm:py-10">
         <div
           className={`transition-all duration-400 ease-in-out ${
             isFlipping
@@ -118,7 +118,7 @@ export default function BookPreview() {
                   .map((paragraph, index) => (
                     <p
                       key={index}
-                      className="mb-6 font-semibold whitespace-pre-line text-lg leading-8"
+                      className="mb-6 max-sm:text-[15px] font-semibold whitespace-pre-line text-lg leading-8"
                     >
                       {paragraph}
                     </p>
